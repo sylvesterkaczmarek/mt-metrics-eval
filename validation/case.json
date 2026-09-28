@@ -1,0 +1,25 @@
+{
+  "repo": "google-research/mt-metrics-eval",
+  "base_branch": "main",
+  "base": "68a481aea1a787392d55af8f76ac8ef40c5f4664",
+  "source": "mt_metrics_eval/stats.py",
+  "test": "mt_metrics_eval/sampling_test.py",
+  "issue": 28,
+  "issue_url": "https://github.com/google-research/mt-metrics-eval/issues/28",
+  "selection": [
+    "mt_metrics_eval/stats_test.py",
+    "mt_metrics_eval/pce_test.py",
+    "mt_metrics_eval/tau_optimization_test.py",
+    "mt_metrics_eval/ratings_test.py",
+    "mt_metrics_eval/sampling_test.py"
+  ],
+  "selection_counts": [
+    77,
+    0,
+    0,
+    0
+  ],
+  "head": "d21154a60d739b863f33a87064a250f41e4ee40b",
+  "branch": "fix/seeded-stratified-sampling-20260928",
+  "title": "Use the seeded generator for every sampling decision"
+}
