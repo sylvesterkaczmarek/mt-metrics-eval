@@ -58,7 +58,8 @@ class SeededSampleTest(parameterized.TestCase):
     expected = np.random.default_rng(seed).choice(100, 12, replace=False)
     sample = stats.Sample(100, 12, 'uniform', seed=seed)
     np.testing.assert_array_equal(sample.sample, expected)
-    np.testing.assert_array_equal(sample.Select(np.arange(100) * 3), expected * 3)
+    np.testing.assert_array_equal(
+        sample.Select(np.arange(100) * 3), expected * 3)
 
   @parameterized.parameters(0, 11)
   def test_stratified_allocation_and_selection_share_generator(self, seed):
